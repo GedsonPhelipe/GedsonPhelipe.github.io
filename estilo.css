@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #000000cf;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte em telas pequenas */
+}
+
+nav ul li {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+/* Adiciona responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Altera a direção dos itens do menu para coluna em telas pequenas */
+        align-items: stretch; /* Faz com que os itens ocupem toda a largura disponível */
+    }
+
+    nav ul li {
+        width: 100%; /* Faz com que cada item ocupe toda a largura disponível */
+    }
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* O formulário também seguirá essa largura */
+}
+
+h2 {
+    text-align: center;  /* Centraliza o texto dos títulos h2 */
+    margin-top: 0;  /* Remove a margem superior padrão */
+}
+    /* Ajuste para o iframe do formulário */
+#contato iframe {
+    width: 100%;
+    max-width: 800px;  /* Limita a largura máxima para que o formulário se alinhe com o conteúdo */
+    height: 1000px;  /* Ajuste a altura conforme necessário */
+    border: none;  /* Remove a borda do iframe */
+    margin: 20px auto;  /* Centraliza o iframe e aplica margens */
+    display: block;  /* Garante que o iframe seja exibido como um bloco */
+}
+
+/* Para o contêiner geral, caso queira garantir que ele fique alinhado com a página */
+#contato {
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;  /* Define a largura máxima */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    #contato iframe {
+        height: auto;  /* Ajusta a altura automaticamente em telas pequenas */
+    }
+}
