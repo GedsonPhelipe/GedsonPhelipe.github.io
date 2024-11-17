@@ -86,9 +86,10 @@ h2 {
     max-width: 800px;  /* Define a largura máxima */
 }
 
-/* Responsividade para telas menores */
 @media (max-width: 768px) {
-    #contato iframe {
-        height: auto;  /* Ajusta a altura automaticamente em telas pequenas */
+    iframe {
+        height: 600px; /* Reduz a altura do iframe em telas pequenas */
+        width: 100%;   /* Garante que a largura seja 100% */
     }
 }
+
