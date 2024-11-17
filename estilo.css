@@ -40,18 +40,10 @@ nav ul li a {
 nav ul li a:hover {
     background-color: rgba(255, 0, 0, 0.545);
 }
-
-/* Adiciona responsividade para dispositivos móveis */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column; /* Altera a direção dos itens do menu para coluna em telas pequenas */
-        align-items: stretch; /* Faz com que os itens ocupem toda a largura disponível */
-    }
-
     nav ul li {
         width: 100%; /* Faz com que cada item ocupe toda a largura disponível */
     }
-}
+
 
 section {
     padding: 20px;
