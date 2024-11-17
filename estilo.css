@@ -76,7 +76,6 @@ h2 {
     display: block;  /* Garante que o iframe seja exibido como um bloco */
 }
 
-/* Para o contêiner geral, caso queira garantir que ele fique alinhado com a página */
 #contato {
     padding: 20px;
     margin: 20px auto;
@@ -86,10 +85,6 @@ h2 {
     max-width: 800px;  /* Define a largura máxima */
 }
 
-@media (max-width: 768px) {
-    #contato iframe {
-        width: 100%;
-        max-width: 100%;
-        height: 2000px;
-    }
+
 }
+
