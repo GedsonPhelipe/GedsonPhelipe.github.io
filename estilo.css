@@ -5,15 +5,26 @@ body {
     background-color: #dddede49;
 }
 
+/* Adicionando estilo ao cabeçalho */
 header {
-    background-color: #000000f2;
-    color: #fffffff3;
-    padding: 20px 0;
-    text-align: center;
+    background-image: url('https://raw.githubusercontent.com/GedsonPhelipe/GedsonPhelipe.github.io/refs/heads/main/cpu-processor-circuit-board-artificial-intelligence-scaled-1-1200x675.jpg');
+    background-size: cover;
+    
+    color: white; /* Garante que o texto fique visível */
+    padding: 60px 0; /* Adiciona espaço acima e abaixo do nome */
+    text-align: center; /* Centraliza o texto dentro do header */
 }
 
+/* Estilizando o título do cabeçalho */
+header h1 {
+    margin: 0; /* Remove margens */
+    font-size: 2.5em; /* Define o tamanho do texto */
+    text-shadow: 2px 2px 4px rgba(2, 2, 2, 0.6); /* Adiciona sombra ao texto para melhor legibilidade */
+}
+
+
 nav {
-    background-color: #000000cf;
+    background-color: #000000;
 }
 
 nav ul {
@@ -38,7 +49,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: rgba(255, 0, 0, 0.545);
+    background: linear-gradient(to bottom, #0c0c0c, #30219f94);
+    
 }
     nav ul li {
         width: 100%; /* Faz com que cada item ocupe toda a largura disponível */
